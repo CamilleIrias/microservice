@@ -34,9 +34,9 @@ app.get('/', (requisicao,resposta) =>{
     resposta.send(dadosRecebidos)
 })
 
+const porta = process.argv[2]
 
-
-app.listen(3005, () => {
+app.listen(porta, () => {
     console.log('Serviço iniciado');
     
 })

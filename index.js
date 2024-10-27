@@ -34,9 +34,8 @@ app.get('/', (requisicao,resposta) =>{
     resposta.send(dadosRecebidos)
 })
 
-const porta = process.argv[2]
 
-app.listen(porta, () => {
+app.listen(8080, () => {
     console.log('Serviço iniciado');
     
 })
